@@ -63,12 +63,26 @@
 }
 .input{
     grid-area: input;
+    text-align: right;
+}
+
+.clear{
+    grid-area: clear;
 }
 
 button{
     background-color: orangered;
     height: 12vh;
     font-size: x-large;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white
+}
+
+button:active {
+    background-color: white;
 }
 
 input{
@@ -82,9 +96,9 @@ input{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    'input input input addition'
-    'b1 b2 b3 subt'
+    'input input clear addition'
+    'b7 b8 b9 subt'
     'b4 b5 b6 mult'
-    'b7 b8 b9 div'
+    'b1 b2 b3 div'
     'deci b0 equal equal';
 }

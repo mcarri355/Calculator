@@ -9,23 +9,24 @@
 </head>
 <body>
     <div class="container">
-        <input class="input" id="input" type="number">
-        <button class="b0" id="b0" onclick="b0()">0</button>
-        <button class="b1" id="b1" onclick="b1()">1</button>
-        <button class="b2" id="b2" onclick="b2()">2</button>
-        <button class="b3" id="b3" onclick="b3()">3</button>
-        <button class="b4" id="b4" onclick="b4()">4</button>
-        <button class="b5" id="b5" onclick="b5()">5</button>
-        <button class="b6" id="b6" onclick="b6()">6</button>
-        <button class="b7" id="b7" onclick="b7()">7</button>
-        <button class="b8" id="b8" onclick="b8()">8</button>
-        <button class="b9" id="b9" onclick="b9()">9</button>
-        <button class="decimal" id="decimal" onclick="decimal()">.</button>
-        <button class="add" id="add" onclick="add()">+</button>
-        <button class="subtract" id="subtract" onclick="subtract()">-</button>
-        <button class="multiply" id="multiply" onclick="multiply()">*</button>
-        <button class="divide" id="divide" onclick="divide()">/</button>
-        <button class="equal" id="equal" onclick="equal()">=</button>
+        <input class="input" id="input" type="text" placeholder="0">
+        <button class="b0" onclick="calc(0)">0</button>
+        <button class="b1" onclick="calc(1)">1</button>
+        <button class="b2" onclick="calc(2)">2</button>
+        <button class="b3" onclick="calc(3)">3</button>
+        <button class="b4" onclick="calc(4)">4</button>
+        <button class="b5" onclick="calc(5)">5</button>
+        <button class="b6" onclick="calc(6)">6</button>
+        <button class="b7" onclick="calc(7)">7</button>
+        <button class="b8" onclick="calc(8)">8</button>
+        <button class="b9" onclick="calc(9)">9</button>
+        <button class="decimal" onclick="calc('.')">.</button>
+        <button class="add" onclick="calc('+')">+</button>
+        <button class="subtract" onclick="calc('-')">-</button>
+        <button class="multiply" onclick="calc('*')">*</button>
+        <button class="divide" onclick="calc('/')">/</button>
+        <button class="equal" onclick="Result()">=</button>
+        <button class="clear" onclick="clr()">CLEAR</button>
     </div>
     <script src="calculator.js"></script>
 </body>
